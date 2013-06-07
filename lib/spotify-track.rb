@@ -22,6 +22,10 @@ class SpotifyTrack
     attributes[:name]
   end
 
+  def to_json
+    attributes.to_json
+  end
+
   private
 
   def attributes
